@@ -2,9 +2,8 @@ const path = require('path');
 const rootDir = require('../util/path')
 const express = require('express');
 const router = express.Router();
-const ErroController = require('../controllers/404');
-const { errorMonitor } = require('events');
+const ErrorController = require('../controllers/404');
 
-router.use(ErroController.get404Page);
+router.use(ErrorController.get404Page);
 
 module.exports = router;
